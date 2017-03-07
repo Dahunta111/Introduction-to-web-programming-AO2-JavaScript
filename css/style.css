@@ -1,0 +1,371 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.1 General Layout
+1.2. Body
+1.3. Element formatting
+1.4. Container
+1.5. top-nav bar and element formatting
+1.6. Logo positioning 
+1.7. outer form wrapper with elements
+1.8. inner positioning of form
+2.0. main content
+
+2.1. formatting to do with dynamic JS
+
+3.0. Reference page
+
+4.0. Media Queries
+	
+-------------------------------------------------------------------*/
+/***************************
+1.1 General Layout
+***************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 200%;
+    clear: both;
+    text-align: center;
+}
+h2 {
+    font-size: 200%;
+    clear: both;
+    text-align: center;
+}
+h3 {
+    font-size: 120%;
+    text-align: left;
+    padding: 2%;
+}
+/***************************
+1.2. Body
+***************************/
+
+body {
+    float: left;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: white;
+    width: 100%;
+}
+/***************************
+1.3. Element formatting
+***************************/
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+}
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+}
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    display: block;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    float: left;
+    color: white;
+    background: #35B5DC;
+}
+footer {
+    height: 75px;
+    width: 100%;
+    float: left;
+    color: white;
+    background: #35B5DC;
+}
+
+/***************************
+1.4. Container
+***************************/
+
+#container {
+    margin: auto;
+    width: 100%;
+}
+
+/***************************
+1.5. top-nav bar and element formatting
+***************************/
+
+#main-nav {
+    margin: 1%;
+}
+#main-nav ul {
+    float: left;
+    list-style: none;
+}
+#main-nav li {
+    float: left;
+    padding: 8px;
+}
+#main-nav li a {
+    color: white;
+    border-radius: 5px;
+    display: block;
+    padding: 8px;
+    background-color: #2091B3;
+}
+
+#main-nav p {
+    font-size: 100%;
+    float: right;
+}
+
+/***************************
+1.6. Logo positioning 
+***************************/
+
+#logo {
+    width: 150px;
+    float: left;
+}
+#logo img {
+    height: 100px;
+}
+
+/***************************
+1.7. outer form wrapper with elements
+***************************/
+
+
+
+#controlWrapper {
+    display: block;
+    float: left;
+    width: 98%;
+    height: 100%;
+    padding: 1%;
+    background: #C8E9F0;
+}
+#controlWrapper output {
+    color: white;
+    float: right;
+}
+
+
+#instructions {
+    text-align: center;
+}
+
+#instructions p {
+    font-size: 100%;
+}
+
+
+
+/***************************
+1.8. inner positioning of form
+***************************/
+#form-wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.form-control-layout{
+    float: left;
+    width: 30%;
+    margin: 1%;
+    height: 150px;
+    background: #35B5DC;
+}
+.form-control-layout h3 {
+    text-align: center;
+    color: white;
+}
+.form-control-layout p {
+    width: 80%;
+    margin: 2% 10%;
+    text-align: center;
+}
+
+.full-control-box {
+    width: 80%;
+    margin: 5% 10%;
+}
+
+.services {
+    width: 62%
+}
+
+
+.service-position {
+    float: left;
+    width: 25%
+}
+.service-position input {
+    width: 100%;
+}
+select {
+    float: left;
+    width: 80%;
+    text-align: center;
+    padding: 1%;
+    margin: 5% 10%;
+}
+
+/***************************
+2.0. main content
+***************************/
+
+
+.footer-button {
+    text-align: center;
+    font-size: 150%;
+    margin-top: 15px
+}
+.footer-button a {
+    color: white;
+}
+/***************************
+2.1. formatting to do with dynamic JS
+***************************/
+
+#hotelInfo {
+    background: #FFFFFF;
+    width: 100%;
+    float: left;
+}
+
+
+.mainContent {
+    margin: 0px 20px 0px 20px;
+    padding-top: 25px;
+}
+.contentWrapper {
+    float: left;
+    width: 50%;
+}
+.contentWrapper img {
+    padding: 1%;
+    margin: 0%;
+    width: 98%;
+}
+.content-information {
+    width: 46%;
+    margin: 1%;
+    padding: 1%;
+    float: left;
+    text-align: center;
+    background: #35B5DC;
+    color: #FFFFF3;
+}
+.content-information h3 {
+    font-size: 130%;
+    text-align: center;
+}
+.content-information {
+    font-size: 120%;
+}
+
+/******************************************************/
+
+/***************************
+3.0. Reference page
+***************************/
+
+.reference-layout img {
+    float: left;
+    width: 25%;
+}
+.reference-text-wrapper {
+    float: left;
+    width: 75%;
+}
+.reference-text-wrapper p {
+    font-size: 110%;
+    margin: 5%;
+}
+
+
+/***************************
+1.4. Media Queries
+***************************/
+
+@media only screen and (max-width: 1100px) {
+    .content-information {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 856px) {
+    .form-control-layout {
+        float: left;
+        width: 31%;
+        margin: 1%;
+        height: 150px;
+    }
+    .contentWrapper {
+        float: left;
+        width: 100%;
+    }
+/***************************
+ adds a larger width for services
+***************************/    
+    
+    .services {
+        width: 64%
+    }
+    .reference-layout img {
+        float: left;
+        width: 100%;
+    }
+    .reference-text-wrapper {
+        float: left;
+        width: 100%;
+        border-bottom: 1px solid #35B5DC;
+    }
+    .reference-text-wrapper p {
+        font-size: 115%;
+        margin: 5%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .form-control-layout {
+        float: left;
+        width: 98%;
+        margin: 1%;
+        height: 150px;
+    }
+
+    text-wrapper p {
+        font-size: 78%;
+        margin: 5%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    #logo {
+        display: none;
+    }
+    #main-nav ul {
+        width: 100%;
+    }
+    #main-nav p {
+        text-align: center;
+        float: none;
+    }
+    .content-information {
+        font-size: 70%;
+    }
+}

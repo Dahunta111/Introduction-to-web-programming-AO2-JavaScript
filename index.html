@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotel Finder</title>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/data.js">
+        </script>
+    </head>
+    <body>
+          <!-- Validation checked -->
+        <div id="container">
+
+            <!-- Header Section -->
+            <header>
+                <div id="logo">
+                    <img src="images/logo.png" alt="HotelFinder Logo">
+                </div>
+                <nav id="main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="html/references.html">References</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- controls Section -->
+        <section id="controlWrapper">
+
+                <h1>Finder Tools</h1> 
+
+                    <div id="instructions"> </div>
+
+            <div id= "form-wrapper">
+
+                <form oninput="distFromCity.value=parseFloat(distance.value)">
+                    <div class="form-control-layout">
+                        <h3> Star
+                        Rating</h3>
+                        <p>
+                            <label for="starRating">Please indicate the lowest star rated hotel you are happy to stay at.</label>
+                        </p>   
+                        <select id= "starRating" name="rating"  autofocus>
+                            <option value="1">
+                                One star or more
+                            </option>
+                            <option value="2">
+                                Two star or more
+                            </option>
+                            <option value="3">
+                                Three star or more
+                            </option>
+                            <option value="4">
+                                Four star or more
+                            </option>
+                            <option value="5">
+                                Five star or more
+                            </option>
+                        </select>
+
+                    </div>
+                    <div class="form-control-layout">
+                        <h3>Distance</h3>
+                        <p><label for="distance">Please indiciate how away the hotel is from the town center.</label>
+                              <output for="distance" name=
+                        "distFromCity">5</output>
+
+                        </p>
+                        <input class="full-control-box" id="distance"
+                        max="5" min="0" step="0.5"
+                        type="range" value="5">
+
+
+                    </div>
+
+                    <div class="form-control-layout">
+
+                            <h3>Price Per Night</h3>    
+                            <p>
+                                <label for ="maxRoom">Please Input the max amount you are willing to pay to stay per night.</label>
+                            </p>  
+
+                            <input class="full-control-box" id="maxRoom" name="priceMaxRoom"  type="number" value="190" >
+
+                    </div>
+
+                     <div class="form-control-layout">
+                         <h3>Breakfast price</h3>
+
+                           <p>
+                               <label for ="maxFood">Please inidicate the most you are willing to pay for breakfast.</label> 
+                           </p>
+
+                        <input class="full-control-box" id="maxFood" name="priceMaxFood"  type="number" value="50" >
+
+                    </div>
+                    <div class="form-control-layout services">
+
+                        <h3>Services</h3>
+                        <p>Please indicate any services that you require</p>
+
+                        <div class="service-position">
+                            <p>
+                                <label for="wifi">Wifi</label><input checked="checked" class="left-clear" id="wifi" name="extras" type="checkbox" value="wifi"> 
+                            </p>
+                        </div>
+
+                        <div class="service-position">
+                            <p>
+                                <label for ="pet">Pets</label><input class="left-clear" id="pet" name="extras" type="checkbox" value="pets" > 
+                            </p>
+                        </div>
+                        <div class="service-position">
+                            <p>
+                                <label for="pool">Pool</label><input class="left-clear" id="pool" name="extras" type="checkbox" value="swimmingPool" >
+                            </p>
+                        </div>
+                         <div class="service-position">
+                            <p>
+                                <label for="disableExtra">Disable</label><input class="left-clear" id="disableExtra" name="extras"  type="checkbox" value="turnOffExtras" >
+                            </p>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+         </section><!-- end of forms -->
+        <!-- One warning that says it doesn't contain h2-h3 heading heading -->
+
+        <article id="hotelInfo"></article>
+
+        <footer>
+                <p class ="footer-button">
+                    <a href="#container">Go to top</a>
+                </p>
+        </footer>
+        </div>
+    </body>
+</html>
